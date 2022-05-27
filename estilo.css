@@ -1,0 +1,56 @@
+
+body{
+margin:0;
+padding:0;
+}
+
+header, footer{
+width:100%;
+background-color:#000;
+color:#fff;
+}
+
+h1{
+margin:0;
+padding:8px;
+}
+
+nav{
+background-color:#ccc;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+padding:0;
+margin:0;
+}
+nav li{
+list-style:none;
+padding:8px;
+}
+
+nav a{
+color:#000;
+}
+
+main{
+width:80%;
+margin-left:10%;
+}
+
+#product-form, #group-form{
+border-style: solid;
+padding:10px;
+}
+
+#product-form p,#group-form p{
+display:flex;
+flex-direction:column;
+}
+
+
+footer{
+text-align:center;
+padding:8px;
+}
