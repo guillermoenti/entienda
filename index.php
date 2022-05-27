@@ -33,7 +33,9 @@ else{
 	$res = $conn->query($query);
 	$user = $res->fetch_assoc();
 
-	$content = "Bienvenido/a ".$user["user"];
+	$content = <<<EOD
+	<p id="greeting">Bienvenido/a, {$user["user"]}</p>
+	EOD;
 
 }
 showHeader($title);

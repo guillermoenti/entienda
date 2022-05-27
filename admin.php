@@ -128,7 +128,7 @@ $content = <<<EOD
 
 <script>
 document.getElementById("id_group").selectedIndex = {$prod["id_group"]}-1;
-document.getElementById("id_engine").selectedIndex = {$prod["id_engine_version"]}-1;
+document.getElementById("id_engine").selectedIndex = {$prod["id_engine_version"]};
 </script>
 
 EOD;
