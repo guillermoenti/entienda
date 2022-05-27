@@ -12,16 +12,6 @@ if($_SESSION["id_user"] != 1){
 	exit();
 }
 
-
-echo $_POST["product"];
-echo $_POST["description"];
-echo $_POST["price"];
-echo $_POST["reference"];
-echo $_POST["website"];
-echo $_POST["id_group"];
-echo $_POST["id_engine_version"];
-
-
 if (!isset($_POST["product"]) || !isset($_POST["description"]) || !isset($_POST["price"]) || !isset($_POST["reference"]) || !isset($_POST["website"]) || !isset($_POST["id_group"]) || !isset($_POST["id_engine_version"])){
 	echo "ERROR 1: Formulario incompleto";
 	exit();

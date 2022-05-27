@@ -30,28 +30,28 @@ if($repass != $pass){
 
 $name = trim($_POST["name"]);
 if (strlen($name) <= 3){
-	echo "ERROR";
+	echo "ERROR 5: El nombre debe tener más de 2 caracteres";
 
 	exit();
 }
 
 $surname = trim($_POST["surname"]);
 if (strlen($surname) <= 3){
-	echo "ERROR 3: La contraseña debe tener más de 3 caracteres";
+	echo "ERROR 6: El apellido debe tener más de 2 caracteres";
 
 	exit();
 }
 
 $email = trim($_POST["email"]);
 if (strlen($email) <= 3){
-	echo "ERROR 3: La contraseña debe tener más de 3 caracteres";
+	echo "ERROR 7: El email debe tener más de 2 caracteres";
 
 	exit();
 }
 
 $birthdate = trim($_POST["birthdate"]);
 if (strlen($birthdate) <= 3){
-	echo "ERROR 3: La contraseña debe tener más de 3 caracteres";
+	echo "ERROR";
 
 	exit();
 }
@@ -60,7 +60,7 @@ if (strlen($birthdate) <= 3){
 $user_tmp = addslashes($user);
 
 if (strlen($user) != strlen($user_tmp)){
-	echo "ERROR 4 = Usuario mal formado";
+	echo "ERROR 8 = Usuario mal formado";
 
 	exit();
 }
@@ -68,7 +68,7 @@ if (strlen($user) != strlen($user_tmp)){
 $pass_tmp = addslashes($pass);
 
 if (strlen($pass) != strlen($pass_tmp)){
-	echo "ERROR 5 = Contraseña mal formada";
+	echo "ERROR 9 = Contraseña mal formada";
 
 	exit();
 }
@@ -78,7 +78,7 @@ $pass = md5($pass);
 $name_tmp = addslashes($name);
 
 if (strlen($name) != strlen($name_tmp)){
-	echo "ERROR 5 = Contraseña mal formada";
+	echo "ERROR 10 = Nombre mal formado";
 
 	exit();
 }
@@ -86,7 +86,7 @@ if (strlen($name) != strlen($name_tmp)){
 $surname_tmp = addslashes($surname);
 
 if (strlen($surname) != strlen($surname_tmp)){
-	echo "ERROR 5 = Contraseña mal formada";
+	echo "ERROR 11 = Apellido mal formado";
 
 	exit();
 }
@@ -94,7 +94,7 @@ if (strlen($surname) != strlen($surname_tmp)){
 $email_tmp = addslashes($email);
 
 if (strlen($email) != strlen($email_tmp)){
-	echo "ERROR 5 = Contraseña mal formada";
+	echo "ERROR";
 
 	exit();
 }
